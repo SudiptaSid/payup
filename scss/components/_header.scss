@@ -1,0 +1,71 @@
+// Main Header
+.main-header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        background: $blue-light;
+        background: linear-gradient(135deg, $blue-light 0%, $blue-dark 100%);
+        padding: 10px 0;
+    }
+    .navbar {
+        padding: 0;
+        gap: 2rem;
+    }
+    .navbar-brand {
+        padding: 0;
+        img {
+            height: 40px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                height: 26px;
+            }
+        }
+    }
+    .navbar-nav {
+        gap: 2rem;
+        align-items: center;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            gap: 1.5rem;
+            align-items: normal;
+        }
+        .nav-item {
+            .nav-link {
+                color: $white-clr;
+                font-weight: 400;
+                padding: 0;
+                &:hover {
+                    color: $text-clr;
+                }
+                &.btn {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        a {
+            font-size: 1.5em;
+            color: $white-clr;
+            &:hover {
+                color: $text-clr;
+            }
+        }
+    }
+
+    &.sticky {
+        background-color: $blue-light;
+        background: linear-gradient(135deg, $blue-light 0%, $blue-dark 100%);
+    }
+}

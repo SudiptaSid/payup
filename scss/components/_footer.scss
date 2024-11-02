@@ -1,0 +1,100 @@
+// Main Footer
+.main-footer {
+    padding: 30px 0;
+    background: $blue-light;
+    background: linear-gradient(45deg, $blue-light 0%, $blue-dark 100%);
+    .left-sec {
+        // Max 767px
+        @media (max-width: $break-767) {
+            text-align: center;
+        }
+        a {
+            img {
+                height: 40px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    height: 26px;
+                }
+            }
+        }
+    }
+    .right-sec {
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                justify-content: center;
+                gap: 1rem;
+            }
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                a {
+                    font-size: 1.5em;
+                    color: $white-clr;
+                    &:hover {
+                        color: $text-clr;
+                    }
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    gap: 1rem;
+                }
+                li {
+                    a {
+                        display: inline-block;
+                        color: $white-clr;
+                        &:hover {
+                            color: $text-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        color: $white-clr;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 40px;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            a {
+                display: inline-block;
+                color: $white-clr;
+                &:hover {
+                    color: $text-clr;
+                }
+            }
+        }
+    }
+}

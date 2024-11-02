@@ -1,0 +1,26 @@
+// Base
+$base-fz: 14px;
+//$primary-ff: "sushi_sanssans";
+$primary-ff: "Montserrat Alternates";
+
+// Colors
+$no-clr: transparent;
+$white-clr: #ffffff;
+$black-clr: #000000;
+$text-clr: #374777;
+$blue-light: #8de1ff;
+$blue-dark: #0081ff;
+$clr-efeeee: #efeeee;
+$clr-a3caff: #bfd7f7;
+$clr-999999: #999999;
+$clr-f5faff: #f5faff;
+
+// Media Sizes
+$break-1280: 1280px;
+$break-1080: 1080px;
+$break-991: 991px;
+$break-767: 767px;
+
+/*
+@media (max-width: $break-767) {}
+*/

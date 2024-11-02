@@ -1,0 +1,32 @@
+// Heading One
+.heading-one {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+        font-weight: 600;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 34px;
+        }
+        + p {
+            margin-top: 15px;
+        }
+    }
+    h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+        font-weight: 600;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 28px;
+        }
+        + p {
+            margin-top: 15px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}

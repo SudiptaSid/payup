@@ -1,0 +1,82 @@
+// Form
+input,
+textarea,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+.form-control {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 10px 20px;
+    color: $text-clr;
+    background-color: $clr-efeeee;
+    border: none;
+    border-radius: 20px;
+    height: auto !important;
+    &:focus {
+        background-color: $clr-efeeee;
+    }
+    &::placeholder {
+        color: $clr-999999;
+    }
+}
+
+// Checkboox
+.custom-checkbox {
+    color: $text-clr;
+    font-size: 1em;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border: 1px solid $clr-999999;
+        border-radius: 6px;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 6px;
+            height: 10px;
+            border: solid $white-clr;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark {
+            background-color: $blue-dark;
+            border-color: $blue-dark;
+            &:after {
+                display: block;
+                border-color: $white-clr;
+            }
+        }
+    }
+}

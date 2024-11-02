@@ -1,0 +1,144 @@
+// Home Page
+.main-banner {
+    background: $blue-light;
+    background: linear-gradient(165deg, $blue-light 0%, $blue-dark 100%);
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .heading-one {
+        color: $white-clr;
+        margin-bottom: 50px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 30px;
+        }
+    }
+    form {
+        h6 {
+            color: $white-clr;
+            margin-bottom: 20px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 14px;
+            }
+        }
+        .form-inline {
+            gap: 1.5rem;
+            margin-bottom: 30px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                flex-flow: nowrap;
+                gap: 1rem;
+            }
+            .form-control {
+                color: $white-clr;
+                border: 1px solid $clr-a3caff;
+                background-color: $clr-a3caff;
+                &::placeholder {
+                    color: $clr-efeeee;
+                }
+            }
+        }
+        p {
+            color: $white-clr;
+            a {
+                display: inline-block;
+                color: $white-clr;
+                text-decoration: underline;
+                &:hover {
+                    color: $text-clr;
+                }
+            }
+        }
+    }
+    .right-sec {
+        text-align: center;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-top: 40px;
+        }
+        img {
+            // Max 767px
+            @media (max-width: $break-767) {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+// About
+.about {
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 50px 0;
+        background-position: center right;
+    }
+    .content {
+        padding: 70px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 0;
+        }
+        .heading-one {
+            margin-bottom: 50px;
+        }
+    }
+    &.about-two {
+        background-position: center left;
+    }
+}
+
+// Why Us
+.why-us {
+    padding: 80px 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 50px 0;
+    }
+    .icon-box {
+        margin-top: 80px;
+        text-align: center;
+        background-color: $clr-f5faff;
+        padding: 50px 20px;
+        border-radius: 20px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-top: 30px;
+            padding: 30px 15px;
+        }
+
+        img {
+            height: 80px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                height: 50px;
+            }
+        }
+        .heading-one {
+            margin-top: 30px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
